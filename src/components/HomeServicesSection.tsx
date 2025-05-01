@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { IconCode, IconMobile, IconPalette } from '@tabler/icons-react';
+import { IconCode, IconMovie, IconPalette } from '@tabler/icons-react';
 
 const services = [
   {
@@ -11,7 +11,7 @@ const services = [
     description: 'We bring more than just good coding skills. Our experience allows us to craft solutions.',
   },
   {
-    icon: <IconMobile size={24} />,
+    icon: <IconMovie size={24} />,
     title: 'Mobile Development',
     description: 'Create complex enterprise software, ensure reliable software integration.',
   },
