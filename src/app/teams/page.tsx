@@ -65,6 +65,12 @@ const team = [
   { name: 'Ferdous Sarker', role: 'AI/ML Lead', image: '/assets/images/team/Arnold_Headshot.jpg' },
 ];
 
+// Configure Image component for public directory
+const ImageConfig = {
+  loader: ({ src }) => src,
+  unoptimized: true
+};
+
 const AllTeamsPage: React.FC = () => {
   return (
     <main className="min-h-screen bg-white py-20">
@@ -86,7 +92,7 @@ const AllTeamsPage: React.FC = () => {
               className="bg-white rounded-xl shadow p-6 text-center"
             >
               <div className="w-24 h-24 mx-auto mb-4 relative">
-                <Image src={member.image} alt={member.name} fill className="rounded-full object-cover" />
+                <Image src={member.image} alt={member.name} fill className="rounded-full object-cover" {...ImageConfig} />
               </div>
               <div className="font-bold text-lg">{member.name}</div>
               <div className="text-gray-500 text-sm">{member.role}</div>
