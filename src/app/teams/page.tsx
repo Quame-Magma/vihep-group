@@ -59,10 +59,10 @@ const scaleIn = {
 
 // Team member data (copied from About page)
 const team = [
-  { name: 'Ferdous Sarker', role: 'CEO, Founder', image: '/team/user1.jpg' },
-  { name: 'Ferdous Sarker', role: 'CEO, Founder', image: '/team/user2.jpg' },
-  { name: 'Ferdous Sarker', role: 'CEO, Founder', image: '/team/user3.jpg' },
-  { name: 'Ferdous Sarker', role: 'CEO, Founder', image: '/team/user4.jpg' },
+  { name: 'Arnold K. Anyor', role: 'Frontend Lead', image: '/assets/images/team/Arnold_Headshot.jpg' },
+  { name: 'Isaac Nkansah', role: 'Backend Lead', image: '/assets/images/team/Isaac_pic.jpg' },
+  { name: 'Emmanuel Nlone', role: 'UI/UX Lead', image: '/assets/images/team/emma_headshort.jpg' },
+  { name: 'Ferdous Sarker', role: 'AI/ML Lead', image: '/assets/images/team/Arnold_Headshot.jpg' },
 ];
 
 const AllTeamsPage: React.FC = () => {
