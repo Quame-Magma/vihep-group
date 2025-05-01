@@ -31,60 +31,60 @@ const categories = [
 ];
 
 // Array of services for the services list
-const services = [
-  {
-    title: 'UI Design',
-    items: [
-      'User Interface Design',
-      'Wireframing & Prototyping',
-      'Design Systems',
-      'Visual Design',
-    ],
-  },
-  {
-    title: 'UX Design',
-    items: [
-      'User Experience Research',
-      'Persona Development',
-      'User Journey Mapping',
-      'Usability Testing',
-    ],
-  },
-  {
-    title: 'Branding',
-    items: [
-      'Logo & Identity Design',
-      'Brand Guidelines',
-      'Color & Typography',
-      'Iconography',
-    ],
-  },
-  {
-    title: 'Consulting',
-    items: [
-      'Design Audits',
-      'Accessibility Consulting',
-      'Product Strategy',
-      'Design Workshops',
-    ],
-  },
-];
+// const services = [
+//   {
+//     title: 'UI Design',
+//     items: [
+//       'User Interface Design',
+//       'Wireframing & Prototyping',
+//       'Design Systems',
+//       'Visual Design',
+//     ],
+//   },
+//   {
+//     title: 'UX Design',
+//     items: [
+//       'User Experience Research',
+//       'Persona Development',
+//       'User Journey Mapping',
+//       'Usability Testing',
+//     ],
+//   },
+//   {
+//     title: 'Branding',
+//     items: [
+//       'Logo & Identity Design',
+//       'Brand Guidelines',
+//       'Color & Typography',
+//       'Iconography',
+//     ],
+//   },
+//   {
+//     title: 'Consulting',
+//     items: [
+//       'Design Audits',
+//       'Accessibility Consulting',
+//       'Product Strategy',
+//       'Design Workshops',
+//     ],
+//   },
+// ];
 
 // Array of features for the features section
-const features = [
-  {
-    icon: '/icons/ui.svg',
-    text: 'Beautiful, intuitive, and accessible interfaces.'
-  },
-  {
-    icon: '/icons/secure.svg',
-    text: 'User-centered design for better engagement.'
-  },
-  {
-    icon: '/icons/support.svg',
-    text: 'Ongoing design support and iteration.'
-  },
-];
+// const features = [
+//   {
+//     icon: '/icons/ui.svg',
+//     text: 'Beautiful, intuitive, and accessible interfaces.'
+//   },
+//   {
+//     icon: '/icons/secure.svg',
+//     text: 'User-centered design for better engagement.'
+//   },
+//   {
+//     icon: '/icons/support.svg',
+//     text: 'Ongoing design support and iteration.'
+//   },
+// ];
 
 // FAQ type definition
 type FAQItem = {

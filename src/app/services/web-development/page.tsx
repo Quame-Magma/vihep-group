@@ -6,7 +6,7 @@ import Image from 'next/image';
 // Import framer-motion for animations
 import { motion } from 'framer-motion';
 // Import React's useState hook for managing state
-import { useState } from 'react';
+// import { useState } from 'react';
 import Link from 'next/link';
 
 // Animation variants for fade-in effect
@@ -26,11 +26,11 @@ interface FAQItem {
   answer: string;
 }
 
-interface ServiceCategory {
-  name: string;
-  description: string;
-  href: string;
-}
+// interface ServiceCategory {
+//   name: string;
+//   description: string;
+//   href: string;
+// }
 
 interface ServiceDetail {
   title: string;
@@ -58,38 +58,38 @@ const faqItems: FAQItem[] = [
   }
 ];
 
-const serviceCategories: ServiceCategory[] = [
-  {
-    name: "Web Development",
-    description: "Modern and responsive web applications",
-    href: "/services/web-development"
-  },
-  {
-    name: "SEO & Marketing",
-    description: "Digital marketing and search optimization",
-    href: "/services/seo-marketing"
-  },
-  {
-    name: "UI/UX Design",
-    description: "User-centered design solutions",
-    href: "/services/ui-ux-design"
-  },
-  {
-    name: "Mobile Development",
-    description: "Native and cross-platform mobile apps",
-    href: "/services/mobile-development"
-  },
-  {
-    name: "Cloud Services",
-    description: "Scalable cloud solutions",
-    href: "/services/cloud-services"
-  },
-  {
-    name: "Hosting Services",
-    description: "Reliable web hosting solutions",
-    href: "/services/hosting-services"
-  }
-];
+// const serviceCategories: ServiceCategory[] = [
+//   {
+//     name: "Web Development",
+//     description: "Modern and responsive web applications",
+//     href: "/services/web-development"
+//   },
+//   {
+//     name: "SEO & Marketing",
+//     description: "Digital marketing and search optimization",
+//     href: "/services/seo-marketing"
+//   },
+//   {
+//     name: "UI/UX Design",
+//     description: "User-centered design solutions",
+//     href: "/services/ui-ux-design"
+//   },
+//   {
+//     name: "Mobile Development",
+//     description: "Native and cross-platform mobile apps",
+//     href: "/services/mobile-development"
+//   },
+//   {
+//     name: "Cloud Services",
+//     description: "Scalable cloud solutions",
+//     href: "/services/cloud-services"
+//   },
+//   {
+//     name: "Hosting Services",
+//     description: "Reliable web hosting solutions",
+//     href: "/services/hosting-services"
+//   }
+// ];
 
 const serviceDetails: ServiceDetail[] = [
   {

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Link from 'next/link';
 
 const fadeIn = {
@@ -20,10 +20,10 @@ type FAQItem = {
   answer: string;
 };
 
-type ServiceCategory = {
-  name: string;
-  href: string;
-};
+// type ServiceCategory = {
+//   name: string;
+//   href: string;
+// };
 
 type ServiceDetails = {
   title: string;
@@ -51,32 +51,32 @@ const faqItems: FAQItem[] = [
   },
 ];
 
-const serviceCategories: ServiceCategory[] = [
-  { 
-    name: "Web Development", 
-    href: "/services/web-development" 
-  },
-  { 
-    name: "SEO & Marketing", 
-    href: "/services/seo-marketing" 
-  },
-  { 
-    name: "UI/UX Design", 
-    href: "/services/ui-ux-design" 
-  },
-  { 
-    name: "Mobile Development", 
-    href: "/services/mobile-development" 
-  },
-  { 
-    name: "Cloud Services", 
-    href: "/services/cloud-services" 
-  },
-  { 
-    name: "Hosting Services", 
-    href: "/services/hosting-services" 
-  }
-];
+// const serviceCategories: ServiceCategory[] = [
+//   { 
+//     name: "Web Development", 
+//     href: "/services/web-development" 
+//   },
+//   { 
+//     name: "SEO & Marketing", 
+//     href: "/services/seo-marketing" 
+//   },
+//   { 
+//     name: "UI/UX Design", 
+//     href: "/services/ui-ux-design" 
+//   },
+//   { 
+//     name: "Mobile Development", 
+//     href: "/services/mobile-development" 
+//   },
+//   { 
+//     name: "Cloud Services", 
+//     href: "/services/cloud-services" 
+//   },
+//   { 
+//     name: "Hosting Services", 
+//     href: "/services/hosting-services" 
+//   }
+// ];
 
 const serviceDetails: ServiceDetails = {
   title: "SEO & Marketing Services",
@@ -110,13 +110,13 @@ const categories = [
 ];
 
 export default function SEOMarketingPage() {
-  const [expandedFaq, setExpandedFaq] = useState(0);
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [expandedFaq, setExpandedFaq] = useState(0);
+  // const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredFaqs = faqItems.filter(faq => 
-    faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // const filteredFaqs = faqItems.filter(faq => 
+  //   faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //   faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
 
   return (
     <main className="min-h-screen bg-white">

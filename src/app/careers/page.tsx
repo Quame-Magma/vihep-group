@@ -89,7 +89,7 @@ export default function CareersPage() {
           {/* Hero description */}
           <p className="text-gray-700 max-w-2xl mb-8">
             Join our team of passionate professionals and work on exciting projects that make a real difference.
-            We're always looking for talented individuals to help us grow and innovate.
+            We&apos;re always looking for talented individuals to help us grow and innovate.
           </p>
           {/* Benefits grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

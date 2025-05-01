@@ -122,7 +122,7 @@ export default function ContactForm() {
       {submitSuccess && (
         <div className="mt-4 p-4 bg-green-50 rounded-md">
           <p className="text-green-800 text-center">
-            Thank you for your message! We'll get back to you soon.
+            Thank you for your message! We&apos;ll get back to you soon.
           </p>
         </div>
       )}

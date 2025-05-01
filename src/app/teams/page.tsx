@@ -1,55 +1,55 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from "next/image";
 import { motion } from 'framer-motion';
 
 // Define the structure for a team
-interface Team {
-  id: string;
-  name: string;
-  description: string;
-  members: string[];
-}
+// interface Team {
+//   id: string;
+//   name: string;
+//   description: string;
+//   members: string[];
+// }
 
 // Sample data for teams
-const teams: Team[] = [
-  {
-    id: '1',
-    name: 'Development Team',
-    description: 'Responsible for software development and coding.',
-    members: ['John Doe', 'Jane Smith', 'Mike Johnson'],
-  },
-  {
-    id: '2',
-    name: 'Design Team',
-    description: 'Handles UI/UX design and creative aspects.',
-    members: ['Alice Brown', 'Bob White', 'Charlie Green'],
-  },
-  {
-    id: '3',
-    name: 'Marketing Team',
-    description: 'Manages marketing strategies and campaigns.',
-    members: ['David Lee', 'Eva Martinez', 'Frank Wilson'],
-  },
-  {
-    id: '4',
-    name: 'Cloud Services Team',
-    description: 'Oversees cloud infrastructure and deployments.',
-    members: ['Grace Kim', 'Henry Ford', 'Ivy Chen'],
-  },
-  {
-    id: '5',
-    name: 'Support Team',
-    description: 'Provides technical support and customer service.',
-    members: ['Jack Black', 'Karen White', 'Liam Brown'],
-  },
-  {
-    id: '6',
-    name: 'QA Team',
-    description: 'Ensures product quality through testing.',
-    members: ['Mona Lisa', 'Nate Silver', 'Olivia Wilde'],
-  },
-];
+// const teams: Team[] = [
+//   {
+//     id: '1',
+//     name: 'Development Team',
+//     description: 'Responsible for software development and coding.',
+//     members: ['John Doe', 'Jane Smith', 'Mike Johnson'],
+//   },
+//   {
+//     id: '2',
+//     name: 'Design Team',
+//     description: 'Handles UI/UX design and creative aspects.',
+//     members: ['Alice Brown', 'Bob White', 'Charlie Green'],
+//   },
+//   {
+//     id: '3',
+//     name: 'Marketing Team',
+//     description: 'Manages marketing strategies and campaigns.',
+//     members: ['David Lee', 'Eva Martinez', 'Frank Wilson'],
+//   },
+//   {
+//     id: '4',
+//     name: 'Cloud Services Team',
+//     description: 'Oversees cloud infrastructure and deployments.',
+//     members: ['Grace Kim', 'Henry Ford', 'Ivy Chen'],
+//   },
+//   {
+//     id: '5',
+//     name: 'Support Team',
+//     description: 'Provides technical support and customer service.',
+//     members: ['Jack Black', 'Karen White', 'Liam Brown'],
+//   },
+//   {
+//     id: '6',
+//     name: 'QA Team',
+//     description: 'Ensures product quality through testing.',
+//     members: ['Mona Lisa', 'Nate Silver', 'Olivia Wilde'],
+//   },
+// ];
 
 // Animation variants for scale-in effect (copied from About page)
 const scaleIn = {

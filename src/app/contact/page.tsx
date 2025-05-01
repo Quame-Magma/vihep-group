@@ -21,9 +21,9 @@ export default function ContactPage() {
           {/* Section label */}
           <span className="text-red-500 font-semibold">-Contact Us</span>
           {/* Main heading */}
-          <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-black">We'd Love To Hear From You</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-4 text-black">We&apos;d Love To Hear From You</h1>
           {/* Introductory text */}
-          <p className="text-gray-700 max-w-2xl">Engitech is the partner of choice for many of the world's leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development</p>
+          <p className="text-gray-700 max-w-2xl">Engitech is the partner of choice for many of the world&apos;s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development</p>
         </div>
       </section>
 
