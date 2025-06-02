@@ -88,18 +88,18 @@ export default function CareersPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-black">Build Your Career With Us</h1>
           {/* Hero description */}
           <p className="text-gray-700 max-w-2xl mb-8">
-            Join our team of passionate professionals and work on exciting projects that make a real difference.
+                      Join our team of passionate professionals and work on exciting projects that make a real difference.
             We&apos;re always looking for talented individuals to help us grow and innovate.
           </p>
           {/* Benefits grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">            {benefits.map((benefit, idx) => (
               // Each benefit card
               <motion.div
                 key={idx}
                 className="bg-[#F8F6F3] rounded-xl shadow p-6"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: 'spring', stiffness: 300 }}
+                style={{}}
               >
                 {/* Benefit icon */}
                 <div className="text-4xl mb-4">{benefit.icon}</div>
@@ -119,8 +119,7 @@ export default function CareersPage() {
           {/* Section heading */}
           <h2 className="text-3xl font-bold mb-8 text-black">Open Positions</h2>
           {/* Job listings grid */}
-          <div className="space-y-6">
-            {jobListings.map((job, idx) => (
+          <div className="space-y-6">            {jobListings.map((job, idx) => (
               // Each job listing card
               <motion.div
                 key={idx}
@@ -129,6 +128,7 @@ export default function CareersPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
+                style={{}}
               >
                 {/* Job title and metadata */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
