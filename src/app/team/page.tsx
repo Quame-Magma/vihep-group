@@ -3,8 +3,8 @@
 
 // Import Next.js optimized image component
 import Image from 'next/image';
-// Import framer-motion for animations
-import { motion } from 'framer-motion';
+// Import our custom motion components with proper typing
+import { motion } from '../../components/motion';
 // Import dynamic for client-only component loading
 import dynamic from 'next/dynamic';
 

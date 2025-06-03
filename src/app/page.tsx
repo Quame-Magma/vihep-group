@@ -4,13 +4,8 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from 'framer-motion';
+import { motion, fadeIn } from '../components/motion';
 import { IconCode, IconDeviceMobile, IconPalette } from '@tabler/icons-react';
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
-};
 
 const services = [
   {

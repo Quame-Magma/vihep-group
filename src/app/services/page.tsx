@@ -5,20 +5,9 @@
 import Image from 'next/image';
 // Import Next.js Link component for navigation
 import Link from 'next/link';
-// Import framer-motion for animations
-import { motion } from 'framer-motion';
+// Import our custom motion components with proper typing
+import { motion, fadeIn, scaleIn } from '../../components/motion';
 import React from 'react';
-
-// Animation variants for fade-in effect
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
-  visible: { opacity: 1, y: 0 }  // Animate to visible and original position
-};
-// Animation variants for scale-in effect
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.8 }, // Start hidden and scaled down
-  visible: { opacity: 1, scale: 1 }   // Animate to visible and normal scale
-};
 
 // Service card type definition
 type ServiceCard = {

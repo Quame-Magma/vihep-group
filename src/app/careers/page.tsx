@@ -4,7 +4,7 @@
 // Import Next.js optimized image component
 import Image from 'next/image';
 // Import framer-motion for animations
-import { motion } from 'framer-motion';
+import { motion } from '../../components/motion';
 // Import dynamic for client-only component loading
 import dynamic from 'next/dynamic';
 
@@ -90,23 +90,21 @@ export default function CareersPage() {
           <p className="text-gray-700 max-w-2xl mb-8">
                       Join our team of passionate professionals and work on exciting projects that make a real difference.
             We&apos;re always looking for talented individuals to help us grow and innovate.
-          </p>
-          {/* Benefits grid */}
+          </p>          {/* Benefits grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">            {benefits.map((benefit, idx) => (
               // Each benefit card
               <motion.div
                 key={idx}
-                className="bg-[#F8F6F3] rounded-xl shadow p-6"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                style={{}}
-              >
+              >                <div className="bg-[#F8F6F3] rounded-xl shadow p-6">
                 {/* Benefit icon */}
                 <div className="text-4xl mb-4">{benefit.icon}</div>
                 {/* Benefit title */}
                 <h3 className="font-bold text-lg text-black mb-2">{benefit.title}</h3>
                 {/* Benefit description */}
                 <p className="text-gray-600">{benefit.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -117,19 +115,17 @@ export default function CareersPage() {
       <section className="py-16 bg-[#F8F6F3] border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4">
           {/* Section heading */}
-          <h2 className="text-3xl font-bold mb-8 text-black">Open Positions</h2>
-          {/* Job listings grid */}
+          <h2 className="text-3xl font-bold mb-8 text-black">Open Positions</h2>          {/* Job listings grid */}
           <div className="space-y-6">            {jobListings.map((job, idx) => (
               // Each job listing card
               <motion.div
                 key={idx}
-                className="bg-white rounded-xl shadow p-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                style={{}}
               >
+                <div className="bg-white rounded-xl shadow p-6">
                 {/* Job title and metadata */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
@@ -153,6 +149,7 @@ export default function CareersPage() {
                       <li key={reqIdx}>{req}</li>
                     ))}
                   </ul>
+                </div>
                 </div>
               </motion.div>
             ))}

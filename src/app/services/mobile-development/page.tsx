@@ -4,21 +4,12 @@
 // Import Next.js optimized image component
 import Image from 'next/image';
 // Import framer-motion for animations
-import { motion } from 'framer-motion';
+import { motion, fadeIn, scaleIn } from '../../../components/motion';
 // Import React's useState hook for managing state
 import { useState } from 'react';
 import Link from 'next/link';
 
-// Animation variants for fade-in effect
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 }, // Start hidden and slightly below
-  visible: { opacity: 1, y: 0 }  // Animate to visible and original position
-};
-// Animation variants for scale-in effect
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.8 }, // Start hidden and scaled down
-  visible: { opacity: 1, scale: 1 }   // Animate to visible and normal scale
-};
+// Animation variants are now imported from the motion component
 
 // FAQ type definition
 type FAQItem = {
